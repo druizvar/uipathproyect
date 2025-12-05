@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Extraer datos de tabla",
+  "Type": "Element",
+  "Id": "Io0DvJRtwkKhdEXcylBkZg",
+  "Reference": "_NeQvwmC7EyAv0S_d7BsXw/Io0DvJRtwkKhdEXcylBkZg",
+  "ParentRef": "_NeQvwmC7EyAv0S_d7BsXw/Lbf85DFSuUaxBygAsqEY1g",
+  "Created": "2025-07-29T20:08:59.8900499Z",
+  "Updated": "2025-07-29T20:08:59.8900499Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

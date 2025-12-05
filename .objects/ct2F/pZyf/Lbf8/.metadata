@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Amazon Vine(1)",
+  "Type": "Screen",
+  "Id": "Lbf85DFSuUaxBygAsqEY1g",
+  "Reference": "_NeQvwmC7EyAv0S_d7BsXw/Lbf85DFSuUaxBygAsqEY1g",
+  "ParentRef": "_NeQvwmC7EyAv0S_d7BsXw/pZyfsJi-bECSvKOrykH0CA",
+  "Created": "2025-07-29T20:07:00.6400222Z",
+  "Updated": "2025-07-29T20:07:00.6400222Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

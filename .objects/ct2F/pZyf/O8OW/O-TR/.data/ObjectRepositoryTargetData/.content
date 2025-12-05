@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ba68-_FXUU-ypP-vpvwrPA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.amazon.es/vine/vine-items?queue=encore&amp;pn=599370031" DesignTimeRectangle="33, -3319, 1693, 4025" DesignTimeScaleFactor="1.100000023841858" FullSelectorArgument="&lt;webctrl class='a-box-inner' parentid='a-page' tag='DIV' /&gt;" Guid="60db0244-3aa7-4b9f-9280-0b0eb7eb4e77" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Amazon Vine' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3bae07baba13fab0547acb282e934401.png" xmlns="">0V9_K6PQj9kWMNLh7m1I0lw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ExtractData</x:String>
+    <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Nueva columna 0'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataNextLink' /&gt;
+&lt;/Table&gt;</p:InArgument>
+    <TargetAnchorable x:Key="NextLinkTarget" BrowserURL="amazon.es/vine/vine-items" CVScreenId="5676efdd-5487-47d0-ae2d-bef24f3c71ee" CvElementArea="1132, 645, 121, 40" CvTextArea="1147, 658, 68, 17" CvTextArgument="Siguiente" CvType="Button" DesignTimeRectangle="1133, 647, 118, 36" DesignTimeScaleFactor="1.100000023841858" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Siguiente→' parentid='vvp-items-grid-container' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Siguiente→' parentid='vvp-items-grid-container' tag='A' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Siguiente' /&gt;" Guid="98dac679-ea58-4aa0-bc0e-aade07e6f8a7" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Amazon Vine' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

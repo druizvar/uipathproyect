@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_cjUU1PIn024Fc9p5ORqcg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon.es/vine/vine-items" CVScreenId="dcebcb36-d17d-4a30-80fe-3992fbdd8162" CvTextArea="99, 360, 159, 30" CvTextArgument="Amazon Vine" CvType="Text" DesignTimeRectangle="32, 339, 225, 71" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='vvp-logo-link' tag='IMG' /&gt;" Guid="75c9ed7c-a9c2-4ba2-8187-58e5b4fb7b10" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Amazon Vine' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="e55557e5bed60505cee95d0486f03072.png" xmlns="">083pO1cZW5E6vRAogms9MzA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
