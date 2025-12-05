@@ -138,7 +138,7 @@
       <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1309,5197" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1281,5476" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="datosGlobal" />
       <Variable x:TypeArguments="x:String" Name="URLNavegar" />
@@ -149,22 +149,23 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Utilice el archivo de Excel" sap:VirtualizedContainerService.HintSize="1234,5174" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\david\Documents\UiPath\Amazon\Amazon_V\Amazon_Vine.xlsm">
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Utilice el archivo de Excel" sap:VirtualizedContainerService.HintSize="1234,5453" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\david\Documents\UiPath\Amazon\Amazon_V\Amazon_Vine.xlsm">
       <ueab:ExcelApplicationCard.Body>
         <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="1200,4878" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="1200,5157" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" Result="{x:Null}" Title="{x:Null}" DisplayName="Cuadro de diálogo de entrada" sap:VirtualizedContainerService.HintSize="1166,275" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" TopMost="False" />
             <ueab:FindFirstLastDataRowX BlankRowsToSkip="1" ColumnName="Palabras" ConfigureLastRowAs="LastPopulatedRow" DisplayName="Buscar la primera/última fila de datos" FirstRowIndex="[GlobalVariablesNamespace.GlobalVariables.primerDato]" FirstRowOffset="0" HasHeaders="True" sap:VirtualizedContainerService.HintSize="1166,345" sap2010:WorkflowViewState.IdRef="FindFirstLastDataRowX_1" LastRowIndex="[GlobalVariablesNamespace.GlobalVariables.ultimoDato]" LastRowOffset="0" Range="[Excel.Table(&quot;Table2&quot;)]" VisibleRowsOnly="False" />
-            <If Condition="[ultimoDato = -1]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="1166,4473" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[ultimoDato = -1]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="1166,4477" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1164,90" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1164,94" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
