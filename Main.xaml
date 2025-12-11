@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamm="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Models;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umm="clr-namespace:UiPath.MicrosoftOffice365.Models;assembly=UiPath.MicrosoftOffice365" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -23,48 +23,36 @@
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Windows.Markup</x:String>
-      <x:String>UiPath.Excel</x:String>
-      <x:String>UiPath.Excel.Model</x:String>
-      <x:String>UiPath.Excel.Activities.Business</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Activities.Excel.Enums</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Enums</x:String>
-      <x:String>System.ComponentModel</x:String>
       <x:String>System.Runtime.Serialization</x:String>
-      <x:String>System.Xml.Serialization</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Excel.Models</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Models</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
-      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Web.Activities.JSON.Models</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Models</x:String>
+      <x:String>UiPath.Shared.Services.Graph.Mail.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Filters</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Mail.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Filters</x:String>
       <x:String>UiPath.Shared.Activities.Utils</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Contracts</x:String>
       <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
-      <x:String>System.Reflection</x:String>
-      <x:String>System.Linq.Expressions</x:String>
-      <x:String>System.Numerics</x:String>
-      <x:String>UiPath.Excel.Activities.Windows.Business</x:String>
-      <x:String>Microsoft.Graph</x:String>
-      <x:String>UiPath.MicrosoftOffice365.Activities.Enums</x:String>
-      <x:String>System.Security</x:String>
-      <x:String>UiPath.Shared.Activities.Business</x:String>
-      <x:String>UiPath.Excel.Activities</x:String>
-      <x:String>UiPath.DataTableUtilities</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
-      <x:String>UiPath.UIAutomationNext.Enums</x:String>
-      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
-      <x:String>UiPath.UIAutomationNext.Activities</x:String>
-      <x:String>UiPath.Platform.ObjectLibrary</x:String>
-      <x:String>UiPath.Platform.SyncObjects</x:String>
-      <x:String>UiPath.UIAutomationNext.Models</x:String>
-      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
-      <x:String>UiPath.CSV.Activities</x:String>
-      <x:String>UiPath.CSV</x:String>
-      <x:String>UiPath.Platform</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.MicrosoftOffice365</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -94,256 +82,149 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>UiPath.Excel</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
       <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>System.Private.Xml</AssemblyReference>
-      <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
       <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
-      <AssemblyReference>System.Memory.Data</AssemblyReference>
       <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
-      <AssemblyReference>System.Linq.Async</AssemblyReference>
-      <AssemblyReference>NPOI.Core</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
-      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
-      <AssemblyReference>netstandard</AssemblyReference>
-      <AssemblyReference>Microsoft.Graph.Core</AssemblyReference>
-      <AssemblyReference>Microsoft.Graph</AssemblyReference>
-      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
-      <AssemblyReference>System.CodeDom</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1309,5197" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1177,2222" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="sd:DataTable" Name="datosGlobal" />
-      <Variable x:TypeArguments="x:String" Name="URLNavegar" />
-      <Variable x:TypeArguments="sd:DataTable" Name="datosAmazon" />
+      <Variable x:TypeArguments="x:String" Name="aEnviar">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">druizvar@gmail.com</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="ui:QueueItem" Name="cola" />
+      <Variable x:TypeArguments="umm:Office365Message" Name="mail" />
+      <Variable x:TypeArguments="x:String" Name="jsonMail" />
+      <Variable x:TypeArguments="x:String" Name="tipo" />
+      <Variable x:TypeArguments="s:String[]" Name="destinatarios" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Utilice el archivo de Excel" sap:VirtualizedContainerService.HintSize="1234,5174" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\david\Documents\UiPath\Amazon\Amazon_V\Amazon_Vine.xlsm">
-      <ueab:ExcelApplicationCard.Body>
-        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="1200,4878" sap2010:WorkflowViewState.IdRef="Sequence_1">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ueab:FindFirstLastDataRowX BlankRowsToSkip="1" ColumnName="Palabras" ConfigureLastRowAs="LastPopulatedRow" DisplayName="Buscar la primera/última fila de datos" FirstRowIndex="[GlobalVariablesNamespace.GlobalVariables.primerDato]" FirstRowOffset="0" HasHeaders="True" sap:VirtualizedContainerService.HintSize="1166,345" sap2010:WorkflowViewState.IdRef="FindFirstLastDataRowX_1" LastRowIndex="[GlobalVariablesNamespace.GlobalVariables.ultimoDato]" LastRowOffset="0" Range="[Excel.Table(&quot;Table2&quot;)]" VisibleRowsOnly="False" />
-            <If Condition="[ultimoDato = -1]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="1166,4473" sap2010:WorkflowViewState.IdRef="If_1">
-              <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1164,90" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </Sequence>
-              </If.Then>
-              <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="1164,4253" sap2010:WorkflowViewState.IdRef="Sequence_4">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[GlobalVariablesNamespace.GlobalVariables.datosBuscar]" DisplayName="Leer libro de intervalo" sap:VirtualizedContainerService.HintSize="1130,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Palabras_Clave" WorkbookPath="Amazon_Vine.xlsx" />
-                  <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[datosGlobal]" DisplayName="Leer libro de intervalo" sap:VirtualizedContainerService.HintSize="1130,120" sap2010:WorkflowViewState.IdRef="ReadRange_3" SheetName="Global" WorkbookPath="Amazon_Vine.xlsx" />
-                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[GlobalVariablesNamespace.GlobalVariables.datosBuscar]" DisplayName="Para cada fila de la tabla de datos" sap:VirtualizedContainerService.HintSize="1130,3716" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
-                    <ui:ForEachRow.Body>
-                      <ActivityAction x:TypeArguments="sd:DataRow">
-                        <ActivityAction.Argument>
-                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
-                        </ActivityAction.Argument>
-                        <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="1128,3534" sap2010:WorkflowViewState.IdRef="Sequence_10">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Palabras" DisplayName="Obtener elemento de fila" sap:VirtualizedContainerService.HintSize="1094,221" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[CurrentRow]">
-                            <ui:GetRowItem.Value>
-                              <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.palabrasClave]</OutArgument>
-                            </ui:GetRowItem.Value>
-                          </ui:GetRowItem>
-                          <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Compra_Automatica" DisplayName="Obtener elemento de fila" sap:VirtualizedContainerService.HintSize="1094,221" sap2010:WorkflowViewState.IdRef="GetRowItem_2" Row="[CurrentRow]">
-                            <ui:GetRowItem.Value>
-                              <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.compraAutomatica]</OutArgument>
-                            </ui:GetRowItem.Value>
-                          </ui:GetRowItem>
-                          <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Valor_Minimo" DisplayName="Obtener elemento de fila" sap:VirtualizedContainerService.HintSize="1094,221" sap2010:WorkflowViewState.IdRef="GetRowItem_3" Row="[CurrentRow]">
-                            <ui:GetRowItem.Value>
-                              <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.valorMinimo]</OutArgument>
-                            </ui:GetRowItem.Value>
-                          </ui:GetRowItem>
-                          <If Condition="[Trim(GlobalVariablesNamespace.GlobalVariables.palabrasClave) = &quot;&quot;]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="1094,2811" sap2010:WorkflowViewState.IdRef="If_2">
-                            <If.Then>
-                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1092,174" sap2010:WorkflowViewState.IdRef="Sequence_11">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="1058,114" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="Hay un caso vacio." />
-                              </Sequence>
-                            </If.Then>
-                            <If.Else>
-                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="1092,2507" sap2010:WorkflowViewState.IdRef="Sequence_12">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="1058,123" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[&quot;el valor actual es: &quot; + GlobalVariablesNamespace.GlobalVariables.palabrasClave]" />
-                                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[datosGlobal]" DisplayName="Para cada fila de la tabla de datos" sap:VirtualizedContainerService.HintSize="1058,2324" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
-                                  <ui:ForEachRow.Body>
-                                    <ActivityAction x:TypeArguments="sd:DataRow">
-                                      <ActivityAction.Argument>
-                                        <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentItem" />
-                                      </ActivityAction.Argument>
-                                      <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="1056,2151" sap2010:WorkflowViewState.IdRef="Sequence_14">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="URL" DisplayName="Obtener elemento de fila" sap:VirtualizedContainerService.HintSize="1022,221" sap2010:WorkflowViewState.IdRef="GetRowItem_5" Row="[CurrentItem]">
-                                          <ui:GetRowItem.Value>
-                                            <OutArgument x:TypeArguments="x:String">[URLNavegar]</OutArgument>
-                                          </ui:GetRowItem.Value>
-                                        </ui:GetRowItem>
-                                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Amazon Vine" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,1870" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="116b1354-f8b3-46a0-afe4-e5c139a63524" Version="V2">
-                                          <uix:NApplicationCard.Body>
-                                            <ActivityAction x:TypeArguments="x:Object">
-                                              <ActivityAction.Argument>
-                                                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                                              </ActivityAction.Argument>
-                                              <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="988,1629" sap2010:WorkflowViewState.IdRef="Sequence_13">
-                                                <sap:WorkflowViewStateService.ViewState>
-                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                  </scg:Dictionary>
-                                                </sap:WorkflowViewStateService.ViewState>
-                                                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Amazon Vine(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="954,493" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="51cf784e-5e79-49c1-a959-8e5540a536e5" Version="V2">
-                                                  <uix:NApplicationCard.Body>
-                                                    <ActivityAction x:TypeArguments="x:Object">
-                                                      <ActivityAction.Argument>
-                                                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                                                      </ActivityAction.Argument>
-                                                      <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="450,243" sap2010:WorkflowViewState.IdRef="Sequence_17">
-                                                        <sap:WorkflowViewStateService.ViewState>
-                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                          </scg:Dictionary>
-                                                        </sap:WorkflowViewStateService.ViewState>
-                                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extraer datos de tabla 'Extraer datos de tabla'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Nueva columna 0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,183" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="51cf784e-5e79-49c1-a959-8e5540a536e5" Version="V5">
-                                                          <uix:NExtractData.Target>
-                                                            <uix:TargetAnchorable BrowserURL="https://www.amazon.es/vine/vine-items?queue=encore&amp;pn=599370031" ContentHash="yzj9z2r8cki7O0e8QSAbLQ" DesignTimeRectangle="33, 282, 1712, 4025" DesignTimeScaleFactor="1.100000023841858" FullSelectorArgument="&lt;webctrl class='a-box-inner' parentid='a-page' tag='DIV' /&gt;" Guid="a30c1ec6-745e-4e26-aa7b-90e632f54677" InformativeScreenshot="4a3d69ace4d2b27f67d93e116f59d00c.png" Reference="_NeQvwmC7EyAv0S_d7BsXw/Io0DvJRtwkKhdEXcylBkZg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Amazon Vine' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
-                                                          </uix:NExtractData.Target>
-                                                        </uix:NExtractData>
-                                                      </Sequence>
-                                                    </ActivityAction>
-                                                  </uix:NApplicationCard.Body>
-                                                  <uix:NApplicationCard.TargetApp>
-                                                    <uix:TargetApp Area="1912, -8, 1936, 1048" BrowserType="Edge" ContentHash="5FT2JpqvSk-NxAHrM6RN5Q" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF0SURBVDhPlZMxS8NAGIYD2vwBR80P0Knt7qTZRZr8A9u9Q3+ASIWCULG4ClnqUi10EWy7qx0cLKQuOrQpOGhJ1cGhr7y5XHokReoLR7jv3u/5vrvcaQB0ACcAhlhe9DJH1wAcx1cHgwFKpRJylgXLtuE4TtwiVSFgrEZ6vR5WUimsxgaBCzQmYKJG8oVCkLBrmnBdN5pvGIZqk5okAJ7nBV10Oh1cN5vBFmQXC5QEcP/pbDaxhaUBsiIh7OasVvsfQJqPyuVgfpDPRzHf91UrlQSkM5kogQep/hF2E1MI+PKiCA9w3TCCBH6ZlLNt7Jgmpu9jzFwHuC+KEQFaW8CHq5IXq7svEh8PgTpTJWDUBi414K4ITOfdJPQ5Al4aolhjjRHlDF6vBITjZltU6VeBpyrQPwW6e6IqfSzI9RAwv8pvD8JICM11DbPwi9YmMLwVvh9fjPAqVyKAFFt8vph3MGzHHVLBY+JzPgfwHV/9Q/QyR/8FZNBNQChmFy8AAAAASUVORK5CYII=" InformativeScreenshot="34e886d5a30d28e9ea7d447fdbe329ab.jpg" Reference="_NeQvwmC7EyAv0S_d7BsXw/Lbf85DFSuUaxBygAsqEY1g" Selector="&lt;html app='msedge.exe' title='Amazon Vine' /&gt;" Url="https://www.amazon.es/vine/vine-items?queue=encore&amp;pn=599370031" Version="V2" />
-                                                  </uix:NApplicationCard.TargetApp>
-                                                </uix:NApplicationCard>
-                                                <uix:NCheckState DisplayName="Comprobar estado de aplicación 'IMG'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="954,496" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="116b1354-f8b3-46a0-afe4-e5c139a63524" Timeout="30" Version="V5">
-                                                  <uix:NCheckState.IfExists>
-                                                    <Sequence DisplayName="Aparece el destino" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_15">
-                                                      <sap:WorkflowViewStateService.ViewState>
-                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                        </scg:Dictionary>
-                                                      </sap:WorkflowViewStateService.ViewState>
-                                                      <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[datosAmazon]" DisplayName="Extraer datos de tabla 'Extraer datos de tabla'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Nueva columna 0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,183" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="116b1354-f8b3-46a0-afe4-e5c139a63524" Version="V5">
-                                                        <uix:NExtractData.NextLink>
-                                                          <uix:TargetAnchorable BrowserURL="amazon.es/vine/vine-items" CVScreenId="5676efdd-5487-47d0-ae2d-bef24f3c71ee" CvElementArea="1132, 645, 121, 40" CvTextArea="1147, 658, 68, 17" CvTextArgument="Siguiente" CvType="Button" DesignTimeRectangle="1133, 647, 118, 36" DesignTimeScaleFactor="1.100000023841858" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Siguiente→' parentid='vvp-items-grid-container' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Siguiente→' parentid='vvp-items-grid-container' tag='A' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Siguiente' /&gt;" Guid="98dac679-ea58-4aa0-bc0e-aade07e6f8a7" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Amazon Vine' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
-                                                            <uix:TargetAnchorable.PointOffset>
-                                                              <uix:PointOffset />
-                                                            </uix:TargetAnchorable.PointOffset>
-                                                          </uix:TargetAnchorable>
-                                                        </uix:NExtractData.NextLink>
-                                                        <uix:NExtractData.Target>
-                                                          <uix:TargetAnchorable BrowserURL="https://www.amazon.es/vine/vine-items?queue=encore&amp;pn=599370031" ContentHash="ba68-_FXUU-ypP-vpvwrPA" DesignTimeRectangle="33, -3319, 1693, 4025" DesignTimeScaleFactor="1.100000023841858" FullSelectorArgument="&lt;webctrl class='a-box-inner' parentid='a-page' tag='DIV' /&gt;" Guid="60db0244-3aa7-4b9f-9280-0b0eb7eb4e77" InformativeScreenshot="3bae07baba13fab0547acb282e934401.png" Reference="_NeQvwmC7EyAv0S_d7BsXw/O-TReDKe7k-ms7a3DBRMlA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Amazon Vine' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
-                                                        </uix:NExtractData.Target>
-                                                      </uix:NExtractData>
-                                                    </Sequence>
-                                                  </uix:NCheckState.IfExists>
-                                                  <uix:NCheckState.IfNotExists>
-                                                    <Sequence DisplayName="No aparece el destino" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_16">
-                                                      <sap:WorkflowViewStateService.ViewState>
-                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                        </scg:Dictionary>
-                                                      </sap:WorkflowViewStateService.ViewState>
-                                                    </Sequence>
-                                                  </uix:NCheckState.IfNotExists>
-                                                  <uix:NCheckState.Target>
-                                                    <uix:TargetAnchorable BrowserURL="amazon.es/vine/vine-items" CVScreenId="dcebcb36-d17d-4a30-80fe-3992fbdd8162" ContentHash="_cjUU1PIn024Fc9p5ORqcg" CvTextArea="99, 360, 159, 30" CvTextArgument="Amazon Vine" CvType="Text" DesignTimeRectangle="32, 339, 225, 71" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='vvp-logo-link' tag='IMG' /&gt;" Guid="75c9ed7c-a9c2-4ba2-8187-58e5b4fb7b10" InformativeScreenshot="e55557e5bed60505cee95d0486f03072.png" Reference="_NeQvwmC7EyAv0S_d7BsXw/1EwMn4pU0EyT7mvRYAufsw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Amazon Vine' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
-                                                  </uix:NCheckState.Target>
-                                                </uix:NCheckState>
-                                                <ui:WriteRange WorkbookPathResource="{x:Null}" DataTable="[datosAmazon]" DisplayName="Escribir libro de intervalo" sap:VirtualizedContainerService.HintSize="954,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A1" WorkbookPath="C:\Users\david\Documents\UiPath\Amazon\Amazon_V\Salida\aa.xlsx" />
-                                                <ueab:SaveExcelFileAsX DisplayName="Guardar archivo de Excel como" FilePath="C:\Users\david\Documents\UiPath\Amazon\Amazon_V\Salida\bb.xlsx" sap:VirtualizedContainerService.HintSize="954,242" sap2010:WorkflowViewState.IdRef="SaveExcelFileAsX_1" SaveAsFileType="OpenXmlWorkbook" Workbook="[Excel]" />
-                                                <ui:FilterDataTable Filters="{x:Null}" OutputDataTable="{x:Null}" SelectColumns="{x:Null}" DataTable="[datosAmazon]" DisplayName="Filtrar tabla de datos" sap:VirtualizedContainerService.HintSize="954,188" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" SelectColumnsMode="Remove" />
-                                              </Sequence>
-                                            </ActivityAction>
-                                          </uix:NApplicationCard.Body>
-                                          <uix:NApplicationCard.TargetApp>
-                                            <uix:TargetApp Area="1922, 0, 1918, 1030" BrowserType="Edge" ContentHash="EpZOxNnkAEOMWyog-wOYiw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF0SURBVDhPlZMxS8NAGIYD2vwBR80P0Knt7qTZRZr8A9u9Q3+ASIWCULG4ClnqUi10EWy7qx0cLKQuOrQpOGhJ1cGhr7y5XHokReoLR7jv3u/5vrvcaQB0ACcAhlhe9DJH1wAcx1cHgwFKpRJylgXLtuE4TtwiVSFgrEZ6vR5WUimsxgaBCzQmYKJG8oVCkLBrmnBdN5pvGIZqk5okAJ7nBV10Oh1cN5vBFmQXC5QEcP/pbDaxhaUBsiIh7OasVvsfQJqPyuVgfpDPRzHf91UrlQSkM5kogQep/hF2E1MI+PKiCA9w3TCCBH6ZlLNt7Jgmpu9jzFwHuC+KEQFaW8CHq5IXq7svEh8PgTpTJWDUBi414K4ITOfdJPQ5Al4aolhjjRHlDF6vBITjZltU6VeBpyrQPwW6e6IqfSzI9RAwv8pvD8JICM11DbPwi9YmMLwVvh9fjPAqVyKAFFt8vph3MGzHHVLBY+JzPgfwHV/9Q/QyR/8FZNBNQChmFy8AAAAASUVORK5CYII=" InformativeScreenshot="bcbeea71d454402ba627ade4b504350b.jpg" Reference="_NeQvwmC7EyAv0S_d7BsXw/O8OWy3dBOkWVOXX2A6jGXg" Selector="&lt;html app='msedge.exe' title='Amazon Vine' /&gt;" Url="[URLNavegar]" Version="V2" />
-                                          </uix:NApplicationCard.TargetApp>
-                                        </uix:NApplicationCard>
-                                      </Sequence>
-                                    </ActivityAction>
-                                  </ui:ForEachRow.Body>
-                                </ui:ForEachRow>
-                              </Sequence>
-                            </If.Else>
-                          </If>
-                        </Sequence>
-                      </ActivityAction>
-                    </ui:ForEachRow.Body>
-                  </ui:ForEachRow>
-                  <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="1130,123" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;el primer dato es: &quot; + primerDato.ToString + &quot; . El ultimo dato es: &quot; + ultimoDato.ToString]" />
-                  <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="1130,114" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[GlobalVariablesNamespace.GlobalVariables.datosBuscar.ToString]" />
-                </Sequence>
-              </If.Else>
-            </If>
-          </Sequence>
-        </ActivityAction>
-      </ueab:ExcelApplicationCard.Body>
-    </ueab:ExcelApplicationCard>
+    <Assign DisplayName="Establecer valor de variable" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:String[]">[destinatarios]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:String[]">[{aEnviar}]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentList="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" MailboxBackup="{x:Reference __ReferenceID0}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Existing" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Hola&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" ConnectionId="db19ec4c-5a71-4160-a080-2ac0cc0bb699" DisplayName="Enviar correo electrónico" sap:VirtualizedContainerService.HintSize="452,540" sap2010:WorkflowViewState.IdRef="SendMailConnections_2" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="pepe" To="[destinatarios]" UseConnectionService="True" UseSharedMailbox="False">
+      <umam:SendMailConnections.AttachmentsBackup>
+        <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
+          <usau:BackupSlot.BackupValues>
+            <scg:Dictionary x:TypeArguments="umame:AttachmentInputMode, scg:List(x:Object)" />
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </umam:SendMailConnections.AttachmentsBackup>
+      <umam:SendMailConnections.InputTypeBackup>
+        <usau:BackupSlot x:TypeArguments="umame:BodyInputType" StoredValue="HTML">
+          <usau:BackupSlot.BackupValues>
+            <scg:Dictionary x:TypeArguments="umame:BodyInputType, scg:List(x:Object)" />
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </umam:SendMailConnections.InputTypeBackup>
+      <umam:SendMailConnections.MailboxArg>
+        <umamm:MailboxArgument SharedMailbox="{x:Null}" UseSharedMailbox="False">
+          <umamm:MailboxArgument.Backup>
+            <usau:BackupSlot x:TypeArguments="umame:MailboxSelectionMode" x:Name="__ReferenceID0" StoredValue="NoMailbox">
+              <usau:BackupSlot.BackupValues>
+                <scg:Dictionary x:TypeArguments="umame:MailboxSelectionMode, scg:List(x:Object)" />
+              </usau:BackupSlot.BackupValues>
+            </usau:BackupSlot>
+          </umamm:MailboxArgument.Backup>
+        </umamm:MailboxArgument>
+      </umam:SendMailConnections.MailboxArg>
+    </umam:SendMailConnections>
+    <ui:GetQueueItem ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Obtener elemento de transacción" FolderPath="david.ruiz.vargas@gmail.com's workspace" sap:VirtualizedContainerService.HintSize="452,186" sap2010:WorkflowViewState.IdRef="GetQueueItem_1" QueueType="CorreosHospital" TransactionItem="[cola]" />
+    <Assign DisplayName="Establecer valor de variable" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[tipo]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[cola.SpecificContent("tipo").ToString()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign DisplayName="Establecer valor de variable" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[jsonMail]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[cola.SpecificContent("MailsAltaJson").ToString()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign DisplayName="Establecer valor de variable" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="umm:Office365Message">[mail]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="umm:Office365Message" xml:space="preserve">[Newtonsoft.Json.JsonConvert.
+          DeserializeObject(Of UiPath.MicrosoftOffice365.Models.Office365Message)(jsonMail)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[&quot;De: &quot; &amp; mail.FromAddress &amp; Environment.NewLine &amp;&#xA;&quot;Asunto: &quot; &amp; mail.Subject &amp; Environment.NewLine &amp;&#xA;&quot;ID: &quot; &amp; mail.InternetMessageId &amp; Environment.NewLine &amp;&#xA;&quot;Hora: &quot; &amp; mail.ReceivedDateTime.GetValueOrDefault().ToString(&quot;dd/MM/yyyy HH:mm&quot;) &amp; Environment.NewLine &amp;&#xA;&quot;Cuerpo: &quot; &amp; mail.Body]" />
+    <If Condition="[tipo = &quot;Alta&quot;]" sap:VirtualizedContainerService.HintSize="452,650" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,234" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SetTransactionStatus ContinueOnError="{x:Null}" Reason="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Establecer estado de la transacción" ErrorType="Business" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="SetTransactionStatus_1" Status="Successful" TransactionItem="[cola]">
+            <ui:SetTransactionStatus.Analytics>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+            </ui:SetTransactionStatus.Analytics>
+            <ui:SetTransactionStatus.Output>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+            </ui:SetTransactionStatus.Output>
+          </ui:SetTransactionStatus>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SetTransactionStatus ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Establecer estado de la transacción" ErrorType="Business" sap:VirtualizedContainerService.HintSize="416,222" sap2010:WorkflowViewState.IdRef="SetTransactionStatus_2" Reason="Test" Status="Failed" TransactionItem="[cola]">
+            <ui:SetTransactionStatus.Analytics>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+            </ui:SetTransactionStatus.Analytics>
+            <ui:SetTransactionStatus.Output>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+            </ui:SetTransactionStatus.Output>
+          </ui:SetTransactionStatus>
+        </Sequence>
+      </If.Else>
+    </If>
   </Sequence>
 </Activity>
